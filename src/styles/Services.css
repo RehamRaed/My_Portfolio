@@ -1,0 +1,48 @@
+#services_section{
+    padding-top: 120px;
+   padding-bottom: 120px;
+}
+#services_section .services{
+  padding-left: 20px;
+}
+#services_section .services h4 {
+  font-weight: 700;
+  color: var(--white-color);
+  }
+  
+#services_section .services h2 {
+    font-weight: 900;
+    font-size: clamp(1.8rem, 2.5vw, 2.5rem);
+    margin-top: -8px;
+    color: var(--white-color);
+  }
+  .services h2::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 4px;
+    background-color: var(--primary-color);
+        border-radius: 2px;
+  }
+  #services_section .btn_container{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  #services_section .proj-button{
+    font-size: 18px;
+    padding: 10px 15px;
+    background-color: transparent;
+    border: 2px solid #ffffff;
+    border-radius: 5px;
+    color: var(--white-color);
+    transition: color 0.4s ease, background-color 0.4s ease, transform 0.4s ease;
+  }
+  #services_section .proj-button:hover {
+    color: #fff;
+    transform: scale(1.05);
+  }
+  #services_section .proj-button:active {
+    transform: scale(0.95);
+    box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.2);
+  }

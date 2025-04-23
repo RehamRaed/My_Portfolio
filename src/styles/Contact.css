@@ -1,0 +1,73 @@
+#contact_section{
+  position: relative;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background: url('../../src/assest/jbe9g636.png');
+    background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  z-index: 1;
+  overflow: hidden;
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(255, 255, 255, 0.1); 
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px); 
+    z-index: -1;
+  }
+
+  > * {
+    position: relative;
+    z-index: 1;
+    color: white;
+  }
+}
+
+ #contact_section .contact {
+  padding-left: 20px;
+}
+.contact h2::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 4px;
+  background-color: var(--primary-color);
+    border-radius: 2px;
+}
+.contact h4 {
+  font-weight: 700;
+  color: var(--white);}
+
+.contact h2 {
+  font-weight: 900;
+  font-size: clamp(1.8rem, 2.5vw, 2.5rem);
+  margin-top: -8px;
+  color: var(--white);
+}
+.first-line {
+  font-size: 18px;
+  font-weight: bold;
+  color: var(--white);
+  line-height: 1.5;
+  margin-bottom: 10px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.second-line {
+  font-size: 18px;
+  font-weight: lighter;
+  color: var(--white);
+  line-height: 1.5;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#contact_section .btn_container{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}

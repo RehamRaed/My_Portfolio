@@ -1,0 +1,34 @@
+
+#projects_page {
+    padding-top: 60px !important;
+    min-height: 100vh;
+    
+  }
+  
+  #projects_page h2 {
+    text-align:left;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: white;
+    position: relative;
+    font-weight: 700;
+    margin-left: 50px;
+  }
+  
+  #projects_page h2::after {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 4px;
+    background-color: var(--primary-color);
+    border-radius: 2px;
+  }
+  
+  .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
